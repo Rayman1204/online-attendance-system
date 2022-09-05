@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with= device-width, initial-scale=1.0">
+    <title> Face Recognition Attendance System </title>
+    <link rel="stylesheet" href={{ url_for('static', filename='style1.css') }}>
+    <link rel="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="/"><img src="{{ url_for('static', filename='logo2.jpeg') }}"></a>;
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="/attendance">Attendance</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>Face Recognition Attendance System</h1>
+    <p>A face recognition attendance system uses facial recognition technology to automatically identify and verify <br>and check liveness.
+
+        Fingerprint scanning systems are almost the norm for attendance systems, but the pandemic <br>has raised the question of systems requiring physical touch. A face recognition attendance system is a <br>contactless technology that eliminates any physical touch between man and machine.
+        
+        Knowing how the <br>technology works makes it much simpler to comprehend how facial recognition attendance systems may make <br>buildings and premises safer and more even for face recognition car security.</p>
+
+</div>
+    </section>
+<!--------JAVASCRIPT for toggle menu------------->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+<!-------about------>
+
+<section class="About">
+    <h1>About</h1>
+    <p>Webcam captured frames will be matched against the existing database images and if the <br>match is found then it’ll store it in a CSV file called ‘Attendance Register’ along with <br>name and time of capture. Only once the file will store the matched image’s details, <br>if the same image is received again then it’ll not update.</p>
+
+    <div class="row">
+        <div class="about-col">
+            <h3>Automated Time Recording System</h3>
+            <p>Face recognition attendance systems may totally automate the manual or biometric monitoring <br>of entry and departure times. There is no need for human involvement or physical confirmation, <br>since the system’s powerful algorithms can autonomously find and recognize faces. <br>Face recognition makes it easy to monitor student's hours of classes attended.</p>
+        </div>
+        <div class="about-col">
+            <h3>More precise and improved attendance</h3>
+            <p>The whole atmosphere to check biometric online is automated using a facial recognition attendance system. <br>In addition to taking attendance, you will automatically record the student's arrival and leave times. </p>
+        </div>
+        <div class="about-col">
+            <h3>A Post-Pandemic Need for Touchless Sign-In Systems</h3>
+            <p>By reducing physical contact in public and work spaces, pandemics like as Covid 19 may be effectively handled. <br>There has been a huge surge in demand for the use of contactless technology since the epidemic. <br>The industry has realized the advantages of face recognition and the use of attendance systems. <br>Workplaces and multi-tenant workplaces may significantly minimize the frequency of interaction between <br>persons, hence reducing the danger of viral transmission.</p>
+        </div>
+    </div>
+</section>
+
+<!---------vision------>
+<section class="vision">
+    <h1>Vision of our team</h1>
+    <p>Nowadays Educational institutions are concerned about regularity<br> 
+        of student attendance. Even in pandemic situation attendance <br>is 
+        still a major issue in schools and colleges. Mainly there are <br>two
+         conventional methods of marking attendance which are calling out
+          the roll <br>call or by taking student sign on paper. They both
+          were more time consuming <br>and difficult. Hence, there is a 
+          requirement of computer-based student attendance <br>management 
+          system which will assist the faculty for maintaining <br>attendance
+           record automatically.We have projected our ideas to implement<br> 
+           an “Automated Attendance System Based on Face Recognition”.<br>
+           The application includes face identification, which saves 
+           time as well as being <br>purely softwere based it can be flagged 
+           as eco-friendly as it reduces the <br>use of paper. This system 
+           also eliminates the chances of fake attendance <br>because of the 
+           face being used as a biometric for authentication. Hence, 
+           this <br>system can be implemented in a field where attendance 
+           plays an important role.</p>
+
+    <div class="row">
+        <div class="vision-col">
+            <div class="layer"></div>
+        </div>
+
+    </div>
+</section>
+<!------------scanner------>
+
+</section>
+</body>
+</html>
